@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=WindSong:wght@400;500&display=swap');
+
+:root {
+  --card-bg: #F4EBE3;
+  --card-hover-bg: #70161F;
+  --card-clicked-bg: #4A3C3C;
+  --card-clicked-hover-bg: #1d2319 ;
+  --text-color: #62513A;
+  --card-action-color: white;
+  --window-outbut-bg-cover: hsla(354, 67%, 26%, 0.188);
+  --window-card-bg: white;
+}
+
+body {
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/*DESKTOP*/
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1{
+  font-family: "WindSong", serif;
+  font-size: 128px;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.calender-layout{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  padding-bottom: 40px;
+}
+
+.cards{
+  background-color: var(--card-bg);
+  color: #62513A;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid #e3dcd5;
+  -webkit-box-shadow: inset 8px 10px 17px -2px rgba(255,255,255,0.6), 8px 10px 17px -2px rgba(69,57,44,0.6); 
+  box-shadow: inset 8px 10px 17px -2px rgba(255,255,255,0.6), 8px 10px 17px -2px rgba(69,57,44,0.6);
+}
+
+.cards:hover{
+  background-color: var(--card-hover-bg);
+  border: 1px solid var(--card-hover-bg);
+  color: var(--card-action-color);
+}
+
+.cards.clicked{
+  background-color: var(--card-clicked-bg);
+  border: 1px solid var(--card-clicked-bg);
+  color: var(--card-action-color);
+  -webkit-box-shadow: inset 8px 10px 17px -2px rgba(69,57,44,0.6); 
+  box-shadow: inset 8px 10px 17px -2px rgba(69,57,44,0.6);
+}
+
+.cards.clicked:hover{
+  background-color: var(--card-clicked-hover-bg);
+  border: 1px solid var(--card-clicked-hover-bg);
+  color: var(--card-action-color); 
+}
+
+.cards h1{
+  font-family: "Playfair Display", serif;
+  font-size: 92px;
+}
+
+.window-output{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
+  background-color: var(--window-outbut-bg-cover);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-card{
+  background-color: var(--window-card-bg);
+  max-width: 700px;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 24px;
+  -webkit-box-shadow: 8px 8px 5px 2px rgba(112,22,31,0.17); 
+  box-shadow: 8px 8px 5px 2px rgba(112,22,31,0.17);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.window-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0;
+}
+
+.window-top h1{
+  font-family: "WindSong", serif;
+  font-weight: 400;
+  font-size: 92px;
+  padding: 0;
+  margin: 0;
+}
+
+.window-top div{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.window-top div p{
+  margin: 0;
+  padding: 0;
+}
+
+.window-top #trackName{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.window-bottom{
+  line-height: 30px;
+}
+
+.window-bottom p{
+  margin: 0;
+  padding: 0;
+}
+
+iframe{
+  border: none;
+  margin-bottom: 20px;
+}
+
+/*TABLET*/
+@media (max-width: 1024px) {
+  header h1{
+    font-size: 64px;
+  }
+  
+  .calender-layout{
+    padding: 20px;
+  }
+
+  .window-card{
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .window-top{
+    flex-direction: column;
+  }
+
+  .window-top div{
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+/*SMARTPHONE*/
+@media (max-width: 650px) {
+  header h1{
+    font-size: 36px;
+  }
+  
+  .calender-layout{
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .window-card{
+    max-width: 50;
+    text-align: center;
+  }
+
+  .window-top{
+    flex-direction: column;
+  }
+
+  .window-top div{
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
