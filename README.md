@@ -38,7 +38,7 @@ Die Desktop-Version zeigt den Adventskalender in einem Raster mit vier Spalten u
 
 ### 2. Startseite: Mobile-Ansicht  
 In der mobilen Version wird der Kalender in einem Raster mit zwei Spalten angezeigt. Die Türchen sind kleiner, um den Platz optimal zu nutzen.  
-<img src="./README-Images/start-phone.png" alt="Startseite - Mobile" style="width: 100%; display: block;">
+<img src="./README-Images/start-phone.png" alt="Startseite - Mobile" style="width: 50%; display: block;">
 
 ---
 
@@ -50,7 +50,7 @@ Das Popup-Fenster zeigt ein geöffnetes Türchen mit einem Titel, einem eingebet
 
 ### 4. Geöffnetes Türchen: Mobile-Ansicht  
 In der mobilen Version passt sich das Popup-Fenster der Bildschirmgröße an, um eine optimale Darstellung zu gewährleisten.  
-<img src="./README-Images/popup-phone.png" alt="Geöffnetes Türchen - Mobile" style="width: 100%; display: block;">
+<img src="./README-Images/popup-phone.png" alt="Geöffnetes Türchen - Mobile" style="width: 50%; display: block;">
 
 ---
 
