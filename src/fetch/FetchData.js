@@ -14,8 +14,9 @@ export function useFetchData() {
             return response.json();
         })
         .then(data => setData(data))
-        .catch(error => setError('Error fetching data: ', error))
-    }, []);
+        .catch(error => setError(`Error fetching data: ${error.message}`));
+      }, []);
 
   return {data, error};
+
 }

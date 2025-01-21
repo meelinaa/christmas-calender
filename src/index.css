@@ -14,13 +14,22 @@
 body {
   font-family: "Quicksand", serif;
   font-size: 18px;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
 
+body,
+header h1,
+.window-top div p, 
+.window-bottom p, 
+.window-top h1{
+  margin: 0;
+  padding: 0;
+}
+
 /*DESKTOP*/
+
+/*HEADER*/
 header{
   display: flex;
   align-items: center;
@@ -31,11 +40,10 @@ header h1{
   font-family: "WindSong", serif;
   font-size: 128px;
   font-weight: 200;
-  padding: 0;
-  margin: 0;
   margin-top: 20px;
 }
 
+/*CALENDER*/
 .calender-layout{
   display:flex;
   flex-wrap: wrap;
@@ -86,6 +94,7 @@ header h1{
   font-size: 92px;
 }
 
+/*POPUP*/
 .window-output{
   position: fixed;
   top: 0;
@@ -125,19 +134,12 @@ header h1{
   font-family: "WindSong", serif;
   font-weight: 400;
   font-size: 92px;
-  padding: 0;
-  margin: 0;
 }
 
 .window-top div{
   display: flex;
   flex-direction: column;
   text-align: right;
-}
-
-.window-top div p{
-  margin: 0;
-  padding: 0;
 }
 
 .window-top #trackName{
@@ -149,11 +151,7 @@ header h1{
   line-height: 30px;
 }
 
-.window-bottom p{
-  margin: 0;
-  padding: 0;
-}
-
+/*SPOTIFY*/
 iframe{
   border: none;
   margin-bottom: 20px;

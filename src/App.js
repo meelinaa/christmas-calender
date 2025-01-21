@@ -1,4 +1,5 @@
 import Calender from "./layout/Calender";
+import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header/>
       <Calender/>
+      <Footer/>
     </div>
   );
 }
