@@ -28,14 +28,29 @@ Dieses Projekt ist ein interaktiver Weihnachtskalender, der jeden Tag eine beson
   - Spotify-API für die Einbettung von Musik-Playern direkt in die Anwendung.  
 
 ---
-
 ## 🖼️ Screenshots  
 
-1. **Startseite:** Übersicht des Adventskalenders mit Türchen.  
-   <img src="./README-Images/calendar-view.png" alt="Startseite" style="width: 100%; display: block;">
+### 1. Startseite: Desktop-Ansicht  
+Die Desktop-Version zeigt den Adventskalender in einem Raster mit vier Spalten und großzügigem Abstand zwischen den Türchen.  
+<img src="./README-Images/start.png" alt="Startseite - Desktop" style="width: 100%; display: block;">
 
-2. **Geöffnetes Türchen:** Anzeige eines Liedes und einer Botschaft.  
-   <img src="./README-Images/opened-door.png" alt="Geöffnetes Türchen" style="width: 100%; display: block;">  
+---
+
+### 2. Startseite: Mobile-Ansicht  
+In der mobilen Version wird der Kalender in einem Raster mit zwei Spalten angezeigt. Die Türchen sind kleiner, um den Platz optimal zu nutzen.  
+<img src="./README-Images/start-phone.png" alt="Startseite - Mobile" style="width: 100%; display: block;">
+
+---
+
+### 3. Geöffnetes Türchen: Desktop-Ansicht  
+Das Popup-Fenster zeigt ein geöffnetes Türchen mit einem Titel, einem eingebetteten Spotify-Player und einer Weihnachtsbotschaft.  
+<img src="./README-Images/popup.png" alt="Geöffnetes Türchen - Desktop" style="width: 100%; display: block;">
+
+---
+
+### 4. Geöffnetes Türchen: Mobile-Ansicht  
+In der mobilen Version passt sich das Popup-Fenster der Bildschirmgröße an, um eine optimale Darstellung zu gewährleisten.  
+<img src="./README-Images/popup-phone.png" alt="Geöffnetes Türchen - Mobile" style="width: 100%; display: block;">
 
 ---
 
